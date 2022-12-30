@@ -1,0 +1,13 @@
+{
+  "item.samventure.tin_ingot": "Tin Ingot",
+  "item.samventure.raw_tin": "Raw Tin",
+
+  "block.samventure.tin_block": "Block of Tin",
+  "block.samventure.tin_ore": "Tin Ore",
+  "block.samventure.tin_ore_deepslate": "Deepslate Tin Ore",
+  "block.samventure.raw_tin_block": "Block of Raw Tin",
+  "block.samventure.cut_tin": "Cut Tin",
+
+  "itemGroup.samventureblockstab": "Samventure Blocks",
+  "itemGroup.samventuremisctab": "Samventure Misc Items"
+}
