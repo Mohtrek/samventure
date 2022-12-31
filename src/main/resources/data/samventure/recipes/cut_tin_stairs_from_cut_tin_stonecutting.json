@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "samventure:cut_tin"
+  },
+  "result": "samventure:cut_tin_stairs"
+}

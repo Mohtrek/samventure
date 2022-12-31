@@ -2,6 +2,8 @@
   "replace": false,
   "values": [
     "samventure:cut_tin",
+    "samventure:cut_tin_slab",
+    "samventure:cut_tin_stairs",
     "samventure:raw_tin_block",
     "samventure:tin_block",
     "samventure:tin_ore",

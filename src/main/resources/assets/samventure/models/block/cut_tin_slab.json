@@ -1,0 +1,8 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "samventure:block/cut_tin",
+    "side": "samventure:block/cut_tin",
+    "top": "samventure:block/cut_tin"
+  }
+}

@@ -26,6 +26,12 @@ public class ModBlocks {
     public static final RegistryObject<Block> CUT_TIN = registerBlock("cut_tin",
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
                     .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.Samventure_Blocks_Tab);
+    public static final RegistryObject<Block> CUT_TIN_SLAB = registerBlock("cut_tin_slab",
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
+                    .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.Samventure_Blocks_Tab);
+    public static final RegistryObject<Block> CUT_TIN_STAIRS = registerBlock("cut_tin_stairs",
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
+                    .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.Samventure_Blocks_Tab);
     public static final RegistryObject<Block> TIN_ORE = registerBlock("tin_ore",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.Samventure_Blocks_Tab);
