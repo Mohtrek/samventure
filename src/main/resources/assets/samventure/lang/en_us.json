@@ -1,12 +1,14 @@
 {
   "item.samventure.tin_ingot": "Tin Ingot",
   "item.samventure.raw_tin": "Raw Tin",
+  "item.samventure.bronze_ingot": "Bronze Ingot",
 
   "block.samventure.tin_block": "Block of Tin",
   "block.samventure.tin_ore": "Tin Ore",
   "block.samventure.tin_ore_deepslate": "Deepslate Tin Ore",
   "block.samventure.raw_tin_block": "Block of Raw Tin",
   "block.samventure.cut_tin": "Cut Tin",
+  "block.samventure.bronze_block": "Block of Bronze",
 
   "itemGroup.samventureblockstab": "Samventure Blocks",
   "itemGroup.samventuremisctab": "Samventure Misc Items"

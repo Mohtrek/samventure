@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "samventure:bronze_block",
+    "samventure:cut_tin",
+    "samventure:raw_tin_block",
+    "samventure:tin_block",
+    "samventure:tin_ore",
+    "samventure:tin_ore_deepslate"
+  ]
+}

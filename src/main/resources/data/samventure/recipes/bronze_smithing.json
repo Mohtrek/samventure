@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "addition": {
+    "item": "samventure:tin_ingot"
+  },
+  "base": {
+    "item": "minecraft:copper_ingot"
+  },
+  "result": {
+    "item": "samventure:bronze_ingot"
+  }
+}
