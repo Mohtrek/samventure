@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:block/slab",
+  "parent": "minecraft:block/stairs",
   "textures": {
     "bottom": "samventure:block/cut_tin",
     "side": "samventure:block/cut_tin",

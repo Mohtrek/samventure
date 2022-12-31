@@ -1,13 +1,13 @@
 {
   "variants": {
     "type=bottom": {
-      "model": "minecraft:block/cut_tin_slab"
+      "model": "samventure:block/cut_tin_slab"
     },
     "type=double": {
-      "model": "minecraft:block/cut_tin"
+      "model": "samventure:block/cut_tin"
     },
     "type=top": {
-      "model": "minecraft:block/cut_tin_slab_top"
+      "model": "samventure:block/cut_tin_slab_top"
     }
   }
 }

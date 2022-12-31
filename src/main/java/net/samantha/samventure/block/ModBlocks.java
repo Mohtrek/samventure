@@ -4,6 +4,8 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.SlabBlock;
+import net.minecraft.world.level.block.StairBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -27,10 +29,11 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
                     .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.Samventure_Blocks_Tab);
     public static final RegistryObject<Block> CUT_TIN_SLAB = registerBlock("cut_tin_slab",
-            () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
+            () -> new SlabBlock(BlockBehaviour.Properties.of(Material.METAL)
                     .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.Samventure_Blocks_Tab);
     public static final RegistryObject<Block> CUT_TIN_STAIRS = registerBlock("cut_tin_stairs",
-            () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
+            () -> new StairBlock(() -> ModBlocks.CUT_TIN.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of(Material.METAL)
                     .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.Samventure_Blocks_Tab);
     public static final RegistryObject<Block> TIN_ORE = registerBlock("tin_ore",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
