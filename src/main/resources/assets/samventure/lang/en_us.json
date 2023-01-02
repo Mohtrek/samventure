@@ -3,6 +3,17 @@
   "item.samventure.raw_tin": "Raw Tin",
   "item.samventure.bronze_ingot": "Bronze Ingot",
 
+  "item.samventure.bronze_sword": "Bronze Sword",
+  "item.samventure.bronze_pickaxe": "Bronze Pickaxe",
+  "item.samventure.bronze_axe": "Bronze Axe",
+  "item.samventure.bronze_shovel": "Bronze Shovel",
+  "item.samventure.bronze_hoe": "Bronze Hoe",
+
+  "item.samventure.bronze_helmet": "Bronze Helmet",
+  "item.samventure.bronze_chestplate": "Bronze Chestplate",
+  "item.samventure.bronze_leggings": "Bronze Leggings",
+  "item.samventure.bronze_boots": "Bronze Boots",
+
   "block.samventure.tin_block": "Block of Tin",
   "block.samventure.tin_ore": "Tin Ore",
   "block.samventure.tin_ore_deepslate": "Deepslate Tin Ore",
@@ -13,5 +24,6 @@
   "block.samventure.bronze_block": "Block of Bronze",
 
   "itemGroup.samventureblockstab": "Samventure Blocks",
-  "itemGroup.samventuremisctab": "Samventure Misc Items"
+  "itemGroup.samventuremisctab": "Samventure Misc Items",
+  "itemGroup.samventureequipmenttab": "Samventure Equipment"
 }

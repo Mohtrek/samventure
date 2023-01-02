@@ -17,4 +17,10 @@ public class ModCreativeModeTab {
             return new ItemStack(ModItems.RAW_TIN.get());
         }
     };
+    public static final CreativeModeTab Samventure_Equipment_Tab = new CreativeModeTab("samventureequipmenttab") {
+        @Override
+        public ItemStack makeIcon() {
+            return new ItemStack(ModItems.BRONZE_SWORD.get());
+        }
+    };
 }
