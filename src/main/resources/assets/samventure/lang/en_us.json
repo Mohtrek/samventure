@@ -22,8 +22,11 @@
   "block.samventure.cut_tin_slab": "Cut Tin Slab",
   "block.samventure.cut_tin_stairs": "Cut Tin Stairs",
   "block.samventure.bronze_block": "Block of Bronze",
+  "block.samventure.carpentry_table": "Carpentry Table",
 
   "itemGroup.samventureblockstab": "Samventure Blocks",
   "itemGroup.samventuremisctab": "Samventure Misc Items",
-  "itemGroup.samventureequipmenttab": "Samventure Equipment"
+  "itemGroup.samventureequipmenttab": "Samventure Equipment",
+
+  "entity.minecraft.villager.carpenter": "Carpenter"
 }
