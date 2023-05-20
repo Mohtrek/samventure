@@ -24,7 +24,7 @@ public class ModConfiguredFeatures {
             OreConfiguration.target(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, ModBlocks.TIN_ORE_DEEPSLATE.get().defaultBlockState())));
 
     public static final RegistryObject<ConfiguredFeature<?, ?>> TIN_ORE = CONFIGURED_FEATURES.register("tin_ore",
-            () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(OVERWORLD_TIN_ORES.get(), 7)));
+            () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(OVERWORLD_TIN_ORES.get(), 16)));
 
     public static void register(IEventBus eventBus) {
         CONFIGURED_FEATURES.register(eventBus);

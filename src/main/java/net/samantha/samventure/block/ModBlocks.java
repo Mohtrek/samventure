@@ -37,10 +37,10 @@ public class ModBlocks {
                     .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.Samventure_Blocks_Tab);
     public static final RegistryObject<Block> TIN_ORE = registerBlock("tin_ore",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.Samventure_Blocks_Tab);
+                    .strength(3f).requiresCorrectToolForDrops()), ModCreativeModeTab.Samventure_Blocks_Tab);
     public static final RegistryObject<Block> TIN_ORE_DEEPSLATE = registerBlock("tin_ore_deepslate",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.Samventure_Blocks_Tab);
+                    .strength(4.5f).requiresCorrectToolForDrops()), ModCreativeModeTab.Samventure_Blocks_Tab);
     public static final RegistryObject<Block> RAW_TIN_BLOCK = registerBlock("raw_tin_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.Samventure_Blocks_Tab);
