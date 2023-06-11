@@ -31,9 +31,6 @@ public class Samventure {
 
         ModVillagers.register(modEventBus);
 
-        ModConfiguredFeatures.register(modEventBus);
-        ModPlacedFeatures.register(modEventBus);
-
         modEventBus.addListener(this::commonSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
