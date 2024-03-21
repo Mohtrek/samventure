@@ -11,14 +11,14 @@
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
-                "max": 9.0,
-                "min": 4.0
+                "max": 6.0,
+                "min": 2.0
               },
               "function": "minecraft:set_count"
             }
           ],
           "name": "minecraft:stick",
-          "weight": 30
+          "weight": 25
         },
         {
           "type": "minecraft:item",
@@ -89,7 +89,7 @@
           "weight": 5
         }
       ],
-      "rolls": 3.0
+      "rolls": 4.0
     },
     {
       "bonus_rolls": 0.0,
@@ -188,7 +188,11 @@
           "weight": 5
         }
       ],
-      "rolls": 1.0
+      "rolls": {
+        "type": "minecraft:uniform",
+        "max": 3.0,
+        "min": 1.0
+      }
     }
 
   ]
