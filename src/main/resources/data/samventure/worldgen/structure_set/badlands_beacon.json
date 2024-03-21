@@ -1,0 +1,16 @@
+{
+  "structures": [
+    {
+      "structure": "samventure:badlands_beacon",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 173235605,
+
+    "spacing": 20,
+    "separation": 7,
+
+    "type": "minecraft:random_spread"
+  }
+}

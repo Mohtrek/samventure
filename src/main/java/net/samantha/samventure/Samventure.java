@@ -11,7 +11,6 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.samantha.samventure.block.ModBlocks;
 import net.samantha.samventure.item.ModItems;
-import net.samantha.samventure.villager.ModVillagers;
 import net.samantha.samventure.world.feature.ModConfiguredFeatures;
 import net.samantha.samventure.world.feature.ModPlacedFeatures;
 import org.slf4j.Logger;
@@ -27,8 +26,6 @@ public class Samventure {
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
-        ModVillagers.register(modEventBus);
-
         ModConfiguredFeatures.register(modEventBus);
         ModPlacedFeatures.register(modEventBus);
 
@@ -39,7 +36,6 @@ public class Samventure {
 
     private void commonSetup(final FMLCommonSetupEvent event) {
         event.enqueueWork(()-> {
-            ModVillagers.registerPDIs();
         });
     }
 
