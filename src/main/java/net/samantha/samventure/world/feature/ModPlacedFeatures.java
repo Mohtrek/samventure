@@ -52,4 +52,5 @@ public class ModPlacedFeatures {
                                  PlacementModifier... modifiers) {
         register(context, key, configuration, List.of(modifiers));
     }
+
 }

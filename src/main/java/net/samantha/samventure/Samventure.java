@@ -13,7 +13,6 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.samantha.samventure.block.ModBlocks;
 import net.samantha.samventure.item.ModCreativeModeTab;
 import net.samantha.samventure.item.ModItems;
-import net.samantha.samventure.villager.ModVillagers;
 import net.samantha.samventure.world.feature.ModConfiguredFeatures;
 import net.samantha.samventure.world.feature.ModPlacedFeatures;
 import org.slf4j.Logger;
@@ -29,8 +28,6 @@ public class Samventure {
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
-        ModVillagers.register(modEventBus);
-
         modEventBus.addListener(this::commonSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
@@ -39,9 +36,7 @@ public class Samventure {
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
-        event.enqueueWork(()-> {
-            ModVillagers.registerPOIs();
-        });
+
     }
 
     private void addCreative(CreativeModeTabEvent.BuildContents event) {
@@ -54,6 +49,8 @@ public class Samventure {
             event.accept(ModBlocks.CUT_TIN_SLAB);
             event.accept(ModBlocks.CUT_TIN_STAIRS);
             event.accept(ModBlocks.BRONZE_BLOCK);
+            event.accept(ModBlocks.SLUSH);
+            event.accept(ModBlocks.FROZEN_LIGHT);
         }
 
         if(event.getTab() == ModCreativeModeTab.Samventure_Ingredients_Tab) {
