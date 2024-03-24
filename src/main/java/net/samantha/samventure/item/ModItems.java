@@ -33,18 +33,18 @@ public class ModItems {
     public static final RegistryObject<Item> BRONZE_HOE = ITEMS.register("bronze_hoe",
             () -> new HoeItem(ModTiers.BRONZE, 0, -1f,
                     new Item.Properties()));
-    public static final RegistryObject<Item> BRONZE_HELMET = ITEMS.register("bronze_helmet",
-            () -> new ArmorItem(ModArmorMaterials.BRONZE, EquipmentSlot.HEAD,
+    /*public static final RegistryObject<Item> BRONZE_HELMET = ITEMS.register("bronze_helmet",
+            () -> new ArmorItem(ModArmorMaterials.BRONZE, ArmorItem.Type.HELMET,
                     new Item.Properties()));
     public static final RegistryObject<Item> BRONZE_CHESTPLATE = ITEMS.register("bronze_chestplate",
-            () -> new ArmorItem(ModArmorMaterials.BRONZE, EquipmentSlot.CHEST,
+            () -> new ArmorItem(ModArmorMaterials.BRONZE, ArmorItem.Type.CHESTPLATE,
                     new Item.Properties()));
     public static final RegistryObject<Item> BRONZE_LEGGINGS = ITEMS.register("bronze_leggings",
-            () -> new ArmorItem(ModArmorMaterials.BRONZE, EquipmentSlot.LEGS,
+            () -> new ArmorItem(ModArmorMaterials.BRONZE, ArmorItem.Type.LEGGINGS,
                     new Item.Properties()));
     public static final RegistryObject<Item> BRONZE_BOOTS = ITEMS.register("bronze_boots",
-            () -> new ArmorItem(ModArmorMaterials.BRONZE, EquipmentSlot.FEET,
-                    new Item.Properties()));
+            () -> new ArmorItem(ModArmorMaterials.BRONZE, ArmorItem.Type.BOOTS,
+                    new Item.Properties()));*/
 
 
     public static void register(IEventBus eventBus) {
