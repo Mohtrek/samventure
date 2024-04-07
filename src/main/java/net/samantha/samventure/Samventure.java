@@ -3,7 +3,7 @@ package net.samantha.samventure;
 import com.mojang.logging.LogUtils;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.event.CreativeModeTabEvent;
+import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -25,6 +25,8 @@ public class Samventure {
     public Samventure() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        ModCreativeModeTab.register(modEventBus);
+
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
@@ -39,8 +41,8 @@ public class Samventure {
 
     }
 
-    private void addCreative(CreativeModeTabEvent.BuildContents event) {
-        if(event.getTab() == ModCreativeModeTab.Samventure_Blocks_Tab) {
+    private void addCreative(BuildCreativeModeTabContentsEvent event) {
+        if(event.getTab() == ModCreativeModeTab.Samventure_Blocks_Tab.get()) {
             event.accept(ModBlocks.TIN_ORE);
             event.accept(ModBlocks.TIN_ORE_DEEPSLATE);
             event.accept(ModBlocks.RAW_TIN_BLOCK);
@@ -53,21 +55,21 @@ public class Samventure {
             event.accept(ModBlocks.FROZEN_LIGHT);
         }
 
-        if(event.getTab() == ModCreativeModeTab.Samventure_Ingredients_Tab) {
+        if(event.getTab() == ModCreativeModeTab.Samventure_Ingredients_Tab.get()) {
             event.accept(ModItems.RAW_TIN);
             event.accept(ModItems.TIN_INGOT);
         }
 
-        if(event.getTab() == ModCreativeModeTab.Samventure_Equipment_Tab) {
+        if(event.getTab() == ModCreativeModeTab.Samventure_Equipment_Tab.get()) {
             event.accept(ModItems.BRONZE_SWORD);
             event.accept(ModItems.BRONZE_PICKAXE);
             event.accept(ModItems.BRONZE_AXE);
             event.accept(ModItems.BRONZE_SHOVEL);
             event.accept(ModItems.BRONZE_HOE);
-            event.accept(ModItems.BRONZE_HELMET);
+            /*event.accept(ModItems.BRONZE_HELMET);
             event.accept(ModItems.BRONZE_CHESTPLATE);
             event.accept(ModItems.BRONZE_LEGGINGS);
-            event.accept(ModItems.BRONZE_BOOTS);
+            event.accept(ModItems.BRONZE_BOOTS);*/
         }
     }
 
