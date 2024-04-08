@@ -66,10 +66,10 @@ public class Samventure {
             event.accept(ModItems.BRONZE_AXE);
             event.accept(ModItems.BRONZE_SHOVEL);
             event.accept(ModItems.BRONZE_HOE);
-            /*event.accept(ModItems.BRONZE_HELMET);
+            event.accept(ModItems.BRONZE_HELMET);
             event.accept(ModItems.BRONZE_CHESTPLATE);
             event.accept(ModItems.BRONZE_LEGGINGS);
-            event.accept(ModItems.BRONZE_BOOTS);*/
+            event.accept(ModItems.BRONZE_BOOTS);
         }
     }
 

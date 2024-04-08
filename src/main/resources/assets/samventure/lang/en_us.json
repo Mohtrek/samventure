@@ -25,7 +25,7 @@
   "block.samventure.frozen_light": "Frozen Light",
   "block.samventure.slush": "Slush",
 
-  "itemGroup.samventureblockstab": "Samventure Blocks",
-  "itemGroup.samventuremisctab": "Samventure Misc Items",
-  "itemGroup.samventureequipmenttab": "Samventure Equipment"
+  "samventure_blocks_tab": "Samventure Blocks",
+  "samventure_ingredients_tab": "Samventure Ingredients",
+  "samventure_equipment_tab": "Samventure Equipment"
 }

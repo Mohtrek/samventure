@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "samventure:bronze_helmet",
+    "samventure:bronze_chestplate",
+    "samventure:bronze_leggings",
+    "samventure:bronze_boots"
+  ]
+}

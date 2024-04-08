@@ -22,15 +22,12 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_LIGHT_GRAY)
                     .strength(6f).requiresCorrectToolForDrops().sound(SoundType.COPPER)));
     public static final RegistryObject<Block> CUT_TIN = registerBlock("cut_tin",
-            () -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_LIGHT_GRAY)
-                    .strength(6f).requiresCorrectToolForDrops().sound(SoundType.COPPER)));
+            () -> new Block(BlockBehaviour.Properties.copy(ModBlocks.TIN_BLOCK.get())));
     public static final RegistryObject<Block> CUT_TIN_SLAB = registerBlock("cut_tin_slab",
-            () -> new SlabBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_LIGHT_GRAY)
-                    .strength(6f).requiresCorrectToolForDrops().sound(SoundType.COPPER)));
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(ModBlocks.TIN_BLOCK.get())));
     public static final RegistryObject<Block> CUT_TIN_STAIRS = registerBlock("cut_tin_stairs",
             () -> new StairBlock(() -> ModBlocks.CUT_TIN.get().defaultBlockState(),
-                    BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_LIGHT_GRAY)
-                    .strength(6f).requiresCorrectToolForDrops().sound(SoundType.COPPER)));
+                    BlockBehaviour.Properties.copy(ModBlocks.TIN_BLOCK.get())));
     public static final RegistryObject<Block> TIN_ORE = registerBlock("tin_ore",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)
                     .strength(3f).requiresCorrectToolForDrops()));
