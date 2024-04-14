@@ -29,10 +29,10 @@ public class ModBlocks {
             () -> new StairBlock(() -> ModBlocks.CUT_TIN.get().defaultBlockState(),
                     BlockBehaviour.Properties.copy(ModBlocks.TIN_BLOCK.get())));
     public static final RegistryObject<Block> TIN_ORE = registerBlock("tin_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)
                     .strength(3f).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> TIN_ORE_DEEPSLATE = registerBlock("tin_ore_deepslate",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE)
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_IRON_ORE)
                     .strength(4.5f).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> RAW_TIN_BLOCK = registerBlock("raw_tin_block",
             () -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_LIGHT_BLUE)
@@ -41,12 +41,20 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_YELLOW)
                     .strength(6f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
     public static final RegistryObject<Block> FROZEN_LIGHT = registerBlock("frozen_light",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.PACKED_ICE)
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.PACKED_ICE)
                     .strength(.3f).sound(SoundType.GLASS).requiresCorrectToolForDrops().friction(0.98F)
                     .lightLevel((p_60954_) -> {return 11;})));
     public static final RegistryObject<Block> SLUSH = registerBlock("slush",
             () -> new FallingBlock(BlockBehaviour.Properties.copy(Blocks.GRAVEL)
                     .strength(0.5f).sound(SoundType.SNOW)));
+    public static final RegistryObject<Block> MELODY_MINERAL_BLOCK = registerBlock("melody_mineral_block",
+            () -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_MAGENTA)
+                    .strength(5.5f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)
+                    .lightLevel((p_60971_) -> {return 3;})));
+    public static final RegistryObject<Block> MELODY_MINERAL_ORE = registerBlock("melody_mineral_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_MAGENTA)
+                    .strength(5.7f).requiresCorrectToolForDrops()
+                    .lightLevel((p_60653_) -> {return 1;})));
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

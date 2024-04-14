@@ -51,6 +51,8 @@ public class Samventure {
             event.accept(ModBlocks.CUT_TIN_SLAB);
             event.accept(ModBlocks.CUT_TIN_STAIRS);
             event.accept(ModBlocks.BRONZE_BLOCK);
+            event.accept(ModBlocks.MELODY_MINERAL_BLOCK);
+            event.accept(ModBlocks.MELODY_MINERAL_ORE);
             event.accept(ModBlocks.SLUSH);
             event.accept(ModBlocks.FROZEN_LIGHT);
         }
@@ -58,6 +60,8 @@ public class Samventure {
         if(event.getTab() == ModCreativeModeTab.Samventure_Ingredients_Tab.get()) {
             event.accept(ModItems.RAW_TIN);
             event.accept(ModItems.TIN_INGOT);
+            event.accept(ModItems.BRONZE_INGOT);
+            event.accept(ModItems.MELODY_MINERAL);
         }
 
         if(event.getTab() == ModCreativeModeTab.Samventure_Equipment_Tab.get()) {

@@ -45,6 +45,8 @@ public class ModItems {
     public static final RegistryObject<Item> BRONZE_BOOTS = ITEMS.register("bronze_boots",
             () -> new ArmorItem(ModArmorMaterials.BRONZE, ArmorItem.Type.BOOTS,
                     new Item.Properties()));
+    public static final RegistryObject<Item> MELODY_MINERAL = ITEMS.register("melody_mineral",
+            () -> new Item(new Item.Properties()));
 
 
     public static void register(IEventBus eventBus) {

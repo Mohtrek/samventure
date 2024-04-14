@@ -2,6 +2,7 @@
   "item.samventure.tin_ingot": "Tin Ingot",
   "item.samventure.raw_tin": "Raw Tin",
   "item.samventure.bronze_ingot": "Bronze Ingot",
+  "item.samventure.melody_mineral": "Melody Mineral",
 
   "item.samventure.bronze_sword": "Bronze Sword",
   "item.samventure.bronze_pickaxe": "Bronze Pickaxe",
@@ -22,6 +23,8 @@
   "block.samventure.cut_tin_slab": "Cut Tin Slab",
   "block.samventure.cut_tin_stairs": "Cut Tin Stairs",
   "block.samventure.bronze_block": "Block of Bronze",
+  "block.samventure.melody_mineral_ore": "Melody Mineral Ore",
+  "block.samventure.melody_mineral_block": "Melody Mineral Block",
   "block.samventure.frozen_light": "Frozen Light",
   "block.samventure.slush": "Slush",
 

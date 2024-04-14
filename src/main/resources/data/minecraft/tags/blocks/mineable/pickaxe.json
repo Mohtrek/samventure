@@ -9,6 +9,8 @@
     "samventure:tin_block",
     "samventure:tin_ore",
     "samventure:tin_ore_deepslate",
-    "samventure:frozen_light"
+    "samventure:frozen_light",
+    "samventure:melody_mineral_ore",
+    "samventure:melody_mineral_block"
   ]
 }

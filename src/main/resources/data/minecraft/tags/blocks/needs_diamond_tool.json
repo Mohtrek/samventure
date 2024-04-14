@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-
+    "samventure:melody_mineral_ore",
+    "samventure:melody_mineral_block"
   ]
 }
