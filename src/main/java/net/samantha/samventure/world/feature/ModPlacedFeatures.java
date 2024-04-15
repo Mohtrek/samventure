@@ -19,13 +19,17 @@ import java.util.List;
 
 public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> TIN_PLACED_KEY = createKey("tin_placed");
+    public static final ResourceKey<PlacedFeature> MELODY_PLACED_KEY = createKey("melody_placed");
 
     public static void bootstrap(BootstapContext<PlacedFeature> context) {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
 
         register(context, TIN_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_TIN_ORES_KEY),
                 commonOrePlacement(14, // VeinsPerChunk
-                        HeightRangePlacement.triangle(VerticalAnchor.aboveBottom(54), VerticalAnchor.aboveBottom(159))));
+                        HeightRangePlacement.triangle(VerticalAnchor.absolute(-3), VerticalAnchor.absolute(100))));
+        register(context, MELODY_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.END_MELODY_ORES_KEY),
+                commonOrePlacement(6, // VeinsPerChunk
+                        HeightRangePlacement.triangle(VerticalAnchor.absolute(-60), VerticalAnchor.absolute(200))));
     }
     public static List<PlacementModifier> orePlacement(PlacementModifier p_195347_, PlacementModifier p_195348_) {
         return List.of(p_195347_, InSquarePlacement.spread(), p_195348_, BiomeFilter.biome());

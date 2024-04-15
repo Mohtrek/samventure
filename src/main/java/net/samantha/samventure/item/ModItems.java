@@ -18,6 +18,8 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> BRONZE_INGOT = ITEMS.register("bronze_ingot",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> BRONZE_BLEND = ITEMS.register("bronze_blend",
+            () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> BRONZE_SWORD = ITEMS.register("bronze_sword",
             () -> new SwordItem(ModTiers.BRONZE, 2, -2.2f,
                     new Item.Properties()));

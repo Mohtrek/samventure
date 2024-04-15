@@ -60,6 +60,7 @@ public class Samventure {
         if(event.getTab() == ModCreativeModeTab.Samventure_Ingredients_Tab.get()) {
             event.accept(ModItems.RAW_TIN);
             event.accept(ModItems.TIN_INGOT);
+            event.accept(ModItems.BRONZE_BLEND);
             event.accept(ModItems.BRONZE_INGOT);
             event.accept(ModItems.MELODY_MINERAL);
         }
